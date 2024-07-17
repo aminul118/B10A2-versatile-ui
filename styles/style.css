@@ -1,17 +1,12 @@
 /* Fonts input */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/miama");
-
+@import url("https://fonts.cdnfonts.com/css/miama?styles=170364");
 .inter-normal {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-}
-
-.miama {
-  font-family: "Miama", sans-serif;
 }
 
 /* Global Style */
@@ -37,22 +32,48 @@
   font-size: 1rem;
   font-weight: 400;
 }
+.btn-primary {
+  color: #ffffff;
+  background: #e6533c;
+  border-radius: 46px;
+  height: 54px;
+  width: 226px;
+  font-size: 1.1rem;
+  border: none;
+}
+.btn-transparent {
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 46px;
+  height: 54px;
+  width: 226px;
+  font-size: 1.1rem;
+  margin-left: 20px;
+}
+
 /* body style */
 body {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
+  color: white;
 }
 /* Nav bar */
 .logo {
   color: #e6533c;
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: 800;
+}
+header {
+  height: 747px;
+  width: 1400;
+  /* border: 2px solid red; */
 }
 .nav-bar {
   /* height: 715px; */
   display: flex;
-  padding: 5rem 5rem 0rem 5rem;
+  padding: 5rem 0rem 2rem 0rem;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(
@@ -60,7 +81,6 @@ body {
     rgb(0, 0, 0),
     rgba(119, 119, 119, 0) 100%
   );
-  /* border: 2px solid red; */
 }
 .primary-menu ul {
   display: grid;
@@ -68,7 +88,7 @@ body {
   align-items: center;
   width: 465px;
   height: 46px;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 400;
   border: 3px solid rgba(255, 255, 255, 0.1);
   border-radius: 39px;
@@ -86,4 +106,103 @@ body {
 .primary-menu ul li a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.hero-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: self-end;
+}
+.test {
+  font-size: 90px;
+  font-weight: 900;
+  position: static;
+  line-height: 90%;
+  margin: 50px 0 50px 0;
+}
+.shape {
+  font-family: "Miama", sans-serif;
+}
+.paragraph {
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+.five-p,
+.three-p {
+  font-size: 13px;
+}
+.text-five {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  width: 193px;
+  height: 98px;
+  align-content: center;
+  padding-left: 40px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+.text-three {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  width: 193px;
+  height: 98px;
+  align-content: center;
+  padding-left: 60px;
+  margin-top: 400px;
+  margin-left: -90px;
+}
+/* .ball {
+  position: absolute;
+  background-color: #e6533c;
+  border-radius: 50px;
+  left: 67.7%;
+  top: 59.8%; 
+  width: 40px;
+  height: 40px;
+} */
+.ball {
+  position: relative;
+  background-color: #e6533c;
+  border-radius: 50px;
+  margin: -45% -22.5%;
+  width: 40px;
+  height: 40px;
+}
+.ham-bar {
+  display: none;
+}
+
+/* responsive for Mobile */
+@media screen and (max-width: 576px) {
+  .primary-menu {
+    display: none;
+  }
+  .ham-bar {
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+  .hero-banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 50px;
+  }
+  .test {
+    font-size: 80px;
+    font-weight: 900;
+    position: static;
+    line-height: 90%;
+    margin: 50px 0 50px 0;
+  }
+ 
 }

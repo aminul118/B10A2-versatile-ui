@@ -52,9 +52,9 @@
   margin-left: 20px;
 }
 
-.secondary-heading{
-font-size: 48px;
-font-weight: 900;
+.secondary-heading {
+  font-size: 48px;
+  font-weight: 900;
 }
 /* body style */
 body {
@@ -62,8 +62,6 @@ body {
   margin: 0 auto;
   font-family: "Inter", sans-serif;
   color: white;
-
-  
 }
 /* Nav bar */
 .logo {
@@ -100,7 +98,6 @@ body {
 }
 .primary-menu ul li {
   list-style: none;
-  
 }
 .primary-menu ul li a {
   text-decoration: none;
@@ -171,32 +168,50 @@ body {
 .ham-bar {
   display: none;
 }
-.section-two{
+.section-two {
   margin-top: 120px;
   text-align: center;
 }
 
-.change-habit h3{
+.change-habit h3 {
   margin-bottom: 20px;
 }
-.four-movement{
+.four-movement {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.four-movement img{
+.four-movement img {
   border-radius: 50%;
   margin: 25px;
- }
+}
 .four-movement img h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.one-p{
+.one-p {
   margin-top: 20px;
 }
 
-/* section 3 */
+/* section-three */
+.section-three {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  height: 371px;
+}
+.run{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-three img {
+  border-radius: 16px;
+}
+
 
 /* responsive for Mobile */
 @media screen and (max-width: 576px) {
@@ -221,22 +236,36 @@ body {
     line-height: 90%;
     margin: 50px 0 50px 0;
   }
-  .four-movement{
+  .four-movement {
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr;
   }
-  .one-p{
-    
+  .one-p {
     width: 231px;
     height: 36px;
     margin: 0 auto;
     align-items: center;
     margin-top: 20px;
   }
-  .change-habit h3{
+  .change-habit h3 {
     margin-top: 350px;
     margin-bottom: 20px;
   }
- 
+  .section-three {
+    padding: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    height: 700px;
+  }
+  .run{
+    padding: 0px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+  }
 }
